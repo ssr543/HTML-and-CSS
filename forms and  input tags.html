@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+    <script>
+        function fun() {
+            alert("Your response has been submitted")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1> FORMS </h1>
+        <form action="backend.php">
+
+            <label for="name"> Name :</label>
+            <div>
+                <input type="text" name="myName" id="name" autocomplete="on">
+            </div><br>
+
+            <label for="bonus"> Bonus :</label>
+            <div>
+                <input type="number" name="mybonus" id="bonus">
+            </div><br>
+
+            <label for="phone"> Phone no. :</label>
+            <div>
+                <input type="tel" name="myPhoneno." id="phone" required autocomplete="on" maxlength="11">
+            </div><br>
+
+            <label for="email"> Email ID :</label>
+            <div>
+                <input type="email" name="myEmail" id="email" required autocomplete="on">
+            </div><br>
+
+            <label for="date"> Date :</label>
+            <div>
+                <input type="date" name="myDate" id="date">
+            </div><br>
+
+            <label for="write"> Write :</label>
+            <div>
+                <textarea name="myText" cols="40" rows="1" id="write" placeholder="Write something here..."></textarea>
+            </div><br>
+
+            <label for="check"> Are you eligible? :</label>
+            <div>
+                <input type="checkbox" name="myEligiblity" id="check">
+            </div><br>
+
+            <div>
+                Gender:
+                <label for="male"> Male :</label>
+                <input type="radio" name="myGender" id="male">
+
+                <label for="female"> Female:</label>
+                <input type="radio" name="myGender" id="female">
+            </div><br>
+
+            <label for="submit"> Submit now :</label>
+            <div>
+                <button type="submit" value="Submit now" id="submit" onclick="fun()" style="border:1px solid black; height:19px; width:70px;">
+                    Submit Now</button>
+            </div><br>
+
+            <label for="reset"> Reset :</label>
+            <div>
+                <input type="reset" value="Reset now" id="reset">
+            </div><br>
+
+
+            <div>
+                <label for="car">Car:</label>
+                <select name="myCar" id="car">
+                    <option value="Swift"> Swift </option>
+                    <option value="Tata"> Tata </option>
+                </select>
+            </div><br>
+
+        </form>
+    </div>
+</body>
+
+</html>
